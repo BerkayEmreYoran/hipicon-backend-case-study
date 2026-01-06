@@ -90,12 +90,6 @@ curl \-X PUT http://localhost:8080/api/products \\
           "description": "Fiyat güncellendi."  
          }'
 
-## **🛠️ Teknik Notlar**
-
-* **Filtreleme:** ProductFilterDTO kullanılarak Spring Data JPA Specification veya Query DSL ile dinamik filtreleme gerçekleştirilir.  
-* **Zamanlanmış Görev (Job):** Spring `@Scheduled` anotasyonu ile yapılandırılmıştır. 5 dakikada bir çalışır.  
-* **Audit:** Ürünlerin createdAt ve updatedAt bilgileri JPA Auditing ile otomatik yönetilir.
-
 ## **⚙️ Kurulum ve Çalıştırma**
 
 **Projenin derlenmesi:**
