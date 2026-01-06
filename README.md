@@ -39,9 +39,11 @@ Bu çalışma, Hipicon'un ürün yönetim süreçlerini ve güvenli erişim meka
 
 ### **1\. Giriş Yap ve Token Al**
 
+```bash
 curl -X POST "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/auth/login" \
 -H "Content-Type: application/json" \
 -d '{ "email": "admin@hipicon.com", "password": "hipicon123" }'
+
 
 ### **2\. Yeni Ürün Oluştur**
 
