@@ -51,7 +51,7 @@ curl \-X POST http://localhost:8080/api/products \\
           "name": "Eames Lounge Chair",  
           "sellerName": "Modern Tasarım Ofisi",  
           "price": 45000.00,  
-          "photoUrls": \["\[https://cdn.hipicon.com/p/1.jpg\](https://cdn.hipicon.com/p/1.jpg)"\],  
+          "photoUrls": ["https://cdn.hipicon.com/p/1.jpg"],
           "description": "Klasik tasarım, hakiki deri."  
          }'
 
