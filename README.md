@@ -55,7 +55,7 @@ curl \-X POST http://localhost:8080/api/products \\
           "description": "Klasik tasarım, hakiki deri."  
          }'
 
-### **3\. Ürünleri Filtrele (ProductFilterDTO Uyumlu)**
+### **3\. Ürünleri Filtrele **
 
 curl \-G "http://localhost:8080/api/products" \\  
   "status=PENDING" \\  
