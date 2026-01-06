@@ -8,6 +8,7 @@ Bu çalışma, Hipicon'un ürün yönetim süreçlerini ve güvenli erişim meka
 
 * **Giriş:** admin@hipicon.com / hipicon123 bilgileriyle JWT alınır.  
 * **Güvenlik:** Tüm ürün operasyonları Authorization: Bearer \<token\> başlığı gerektirir.
+* **Not:** Kullanıcı verileri data.sql dosyası ile veritabanına import edilmiştir. 
 
 ### **2\. Ürün Yönetimi (HIPI-2)**
 
