@@ -43,17 +43,21 @@ Bu çalışma, Hipicon'un ürün yönetim süreçlerini ve güvenli erişim meka
 curl -X POST "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/auth/login" \
 -H "Content-Type: application/json" \
 -d '{ "email": "admin@hipicon.com", "password": "hipicon123" }'
+```
 
 
 ### **2\. Yeni Ürün Oluştur**
 
+```bash
 curl -X POST "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/products" \
 -H "Authorization: Bearer <TOKEN>" \
 -H "Content-Type: application/json" \
 -d '{ "name": "Eames Lounge Chair", "sellerName": "Modern Tasarım Ofisi", "price": 45000.00, "photoUrls": ["https://cdn.hipicon.com/p/1.jpg"], "description": "Klasik tasarım, hakiki deri." }'
+```
 
 ### **3\. Ürünleri Filtrele**
 
+```bash
 curl -G "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/products" \
 --data-urlencode "status=PENDING" \
 --data-urlencode "sellerName=Modern Tasarım Ofisi" \
@@ -62,23 +66,30 @@ curl -G "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/produ
 --data-urlencode "pageNumber=0" \
 --data-urlencode "pageSize=10" \
 -H "Authorization: Bearer <TOKEN>"
+```
 
 ### **4\. Sadece Fiyat Aralığı ile Filtrele**
 
+```bash
 curl -X GET "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/products?minPrice=20000&maxPrice=60000" \
 -H "Authorization: Bearer <TOKEN>"
+```
 
 ### **5\. Ürünü Onayla**
 
+```bash
 curl -X PUT "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/products/1/approve" \
 -H "Authorization: Bearer <TOKEN>"
+```
 
 ### **6\. Ürünü Güncelle**
 
+```bash
 curl -X PUT "https://hipicon-backend-case-study-9741a53883fc.herokuapp.com/api/products" \
 -H "Authorization: Bearer <TOKEN>" \
 -H "Content-Type: application/json" \
 -d '{ "id": 1, "name": "Eames Lounge Chair - V2", "sellerName": "Modern Tasarım Ofisi", "price": 48000.00, "photoUrls": ["https://cdn.hipicon.com/p/1.jpg"], "description": "Fiyat güncellendi." }'
+```
 
 ## **⚙️ Kurulum ve Çalıştırma**
 
